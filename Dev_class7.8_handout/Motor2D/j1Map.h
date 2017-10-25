@@ -136,6 +136,7 @@ public:
 	// Propagation style
 	void PropagateBFS();
 	void PropagateDijkstra();
+	void PropagateAStar();
 
 private:
 
@@ -164,6 +165,7 @@ private:
 	uint				cost_so_far[COST_MAP][COST_MAP];
 	p2DynArray<iPoint>	path;
 	SDL_Texture*		tile_x = nullptr;
+	iPoint				goal;
 };
 
 #endif // __j1MAP_H__
